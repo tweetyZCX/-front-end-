@@ -1,0 +1,278 @@
+/*通用样式*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font:  14px/24px 微软雅黑 ;
+}
+img{
+    border: none;
+}
+
+.wp{
+    width: 960px;
+    margin: 0 auto;/*居中*/
+}
+.zuo{
+    float: left;/*左浮动*/
+}
+.you{
+    float:right;/*右浮动*/
+}
+.clear{
+    clear: both;/*清除浮动*/
+}
+.top{
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    background-color: rgb(51, 51, 51);
+    color: rgb(215, 215, 215);
+}
+.top a{
+    color:rgb(215, 215, 215);
+    text-decoration: none;/*去下划线*/ 
+}
+.top a:hover{
+    color:#f60;
+}
+.zuo span{
+    margin-right: 15px;
+}
+#space{
+    margin-right: 15px;
+}
+/*LOGOS*/
+.logos{
+    height: 59px;
+    margin: 15px 0;/*上下、左右*/
+}
+/*搜索*/
+.search{
+    width: 330px;
+    height: 41px;
+    margin-top: 9px;
+}
+.search td{
+    height: 41px;
+    padding: 0;
+    margin: 0;
+}
+.s_z{
+    width: 6px;
+    background: url("images/s_z.jpg") no-repeat;
+}
+.s_c{
+    width:240px;
+    background: url("images/s_c.jpg") repeat-x;
+}
+.s_c input{
+    height: 35px;
+    width:240px;
+    line-height: 35px;
+    border: none;
+    margin-top: 2px;
+    color: gray;
+    font-size: 20px;
+    font-family: 宋体;
+}
+.s_y{
+    width: 78px;
+    background: url("images/s_r.jpg") no-repeat;
+}
+.s_y button{
+    width: 78px;
+    height: 41px;
+    background: none;
+    border: 0;
+    cursor: pointer;/*给按钮加上手型工具*/
+}
+
+.telephone{
+    margin-left: 15px;
+}
+.telephone span{
+    font-size: 26px;
+    color: rgb(220, 46, 3);
+    line-height: 59px;
+}
+
+/*导航栏*/
+.nav{
+    width: 100%;
+    height: 39px;
+    background: url("images/nav_bg.jpg") repeat-x;
+}
+.nav ul{
+    list-style-type: none;
+}
+.nav li{
+    float: left;
+    line-height: 39px;
+    padding: 0px 28px;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+.nav li.a ,.nav li:hover{
+    background: url("images/nav_hover.jpg") repeat-x;
+}
+
+.center .ad img{
+    width: 100%;
+    height: 206px;
+
+}
+
+/*中间部分*/
+.center .ad{
+    margin-bottom: 10px;
+}
+.center .profile{
+    width: 540px;
+    height: 360px;
+    margin-right: 20px;
+}
+.center .news{
+    width: 400px;
+    height: 360px;
+}
+.center span a{
+    color: rgb(178, 46, 47);
+    text-decoration: none;
+}
+.center .produce{
+    width: 100%;
+    height: 283px;
+}
+.center .tittle{
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgb(178, 46, 47);
+    position: relative;
+}
+.center .tittle span{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.center .profile .content img{
+    float: left;
+    margin: 0 10px 10px 0;
+}
+.center .profile .content p{
+    text-indent: 2em;
+    color: rgb(125, 122, 120);
+}
+
+
+.center .news .content a{
+    color: rgb(125, 122, 120);
+    text-decoration: none;
+}
+.center .news .content a h3{
+    font-weight: normal;
+    font-size: 14px;
+    
+}
+.center .news .content a span{
+    font-size: 12px;
+    position: absolute;/*我试了，浮动也能达到相应的效果*/
+    right: 0px;
+    bottom: 0px;
+}
+.center .news .content li{
+    list-style: none;
+    line-height: 24px;
+    
+    height: 24px;
+    position: relative;
+    padding-left: 15px;/*留位置给小矩形，用列表自带的列表符会出去，必须采取邪门歪道*/
+    background: url("images/list_bg.jpg") no-repeat center left;/*为了添加小矩形不择手段也是666*/
+    margin-bottom: 6px;/*使左右两边高度相等*/
+}
+.center .news .content #shouhang{
+    background: none;
+    padding-left: 0px;
+    height: 76px;
+}
+.center .news .content img{
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+.center .news .content span{
+    margin-right: 0px;
+}
+.center .news .content #shouhang p{
+    font-size: 12px;
+    text-indent: 2em;
+    color: rgb(150, 150, 150);
+}
+
+.center .produce .content li{
+    float: left;
+    list-style: none;
+    width: 151px;
+    height: 96px;
+    margin: 0px 10px 10px 0px;
+    overflow: hidden;
+    position: relative;
+}
+#a,#b{
+    margin-right: 0;
+}
+.center .produce .content li img{
+    float: left;
+}
+.center .produce .content li span{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: red;
+    color: #fff;
+    font-size: 14px;
+    width: 131px;
+    height: 20px;
+    padding: 0px 10px;
+    overflow: hidden;
+    display: none;
+}
+.center .produce .content li a:hover span{
+    display: block;
+}
+
+
+/*footer*/
+.footer{
+    clear: both;
+    width: 100%;
+    height: 103px;
+    background: url("images/footer_bg.jpg") repeat-x;
+}
+.footer .footer_top a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+.footer .footer_top{
+    color: whitesmoke;
+    height: 80px;
+    line-height: 80px;
+}
+.footer .footer_top .zuo{
+    font-size: 16px;
+}
+.footer_bottom p{
+    color: #f60;
+}
+.footer_bottom a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.footer_bottom a:hover{
+    color: #f60;
+}
