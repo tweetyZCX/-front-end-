@@ -276,3 +276,20 @@ img{
 .footer_bottom a:hover{
     color: #f60;
 }
+
+/*tools*/
+.tool{
+    position: fixed;
+    width: 40px;
+    height: 205px;
+    background: url("images/top_tool.jpg");
+    right: 50px;
+    bottom: 150px;
+}
+.tool div{
+    border: none;
+    float: left;
+    margin-bottom: 13px;
+    width: 36px;
+    height: 36px;
+}
