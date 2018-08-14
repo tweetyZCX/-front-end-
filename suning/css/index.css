@@ -1,0 +1,371 @@
+/*定义变量*/
+/*清除天生样式*/
+body {
+  margin: 0px;
+  font-size: 0.5rem;
+  font-family: Arial, Helvetica, STHeiTi, sans-serif;
+}
+form {
+  padding: 0px;
+}
+input {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+}
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+img {
+  border: none;
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+/*清除浮动*/
+.clear_float:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/*定义一般样式*/
+a {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: #818788;
+}
+input {
+  -webkit-appearance: none;
+}
+/*定义框架*/
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+/*主体*/
+.head_box {
+  width: 100%;
+  height: 1.85rem;
+  position: fixed;
+  background-color: #fabc09;
+}
+.head_box .classification {
+  /*分类按钮*/
+  display: block;
+  float: left;
+  width: 1.95rem;
+  height: 1.85rem;
+  background: url('../img/ico-type.jpg') no-repeat 0.55rem 0.25rem;
+  background-size: 0.825rem 1.375rem;
+}
+.head_box .search_bar {
+  /*搜索框*/
+  float: left;
+  width: 12rem;
+  height: 1.85rem;
+  position: relative;
+}
+.head_box .search_bar .search_form {
+  height: 1.25rem;
+  padding-top: 0.35rem;
+}
+.head_box .search_bar .search_form:before {
+  content: '';
+  display: block;
+  width: 0.55rem;
+  height: 0.575rem;
+  position: absolute;
+  top: 0.625rem;
+  left: 0.4rem;
+  background: url('../img/ico-search.jpg') no-repeat;
+  background-size: 0.55rem 0.575rem;
+}
+.head_box .search_bar .search_form .search_input {
+  float: right;
+  width: 12rem;
+  height: 1.25rem;
+  font-size: 0.5rem;
+  line-height: 1.25rem;
+  padding-left: 1.275rem;
+  box-sizing: border-box;
+  background: #d5dba9;
+}
+.head_box .shopping_car {
+  /*购物车*/
+  display: block;
+  float: left;
+  width: 2.05rem;
+  height: 1.85rem;
+  background: url('../img/ico-shopCar.jpg') no-repeat 0.425rem 0.2rem;
+  background-size: 1.25rem 1.4rem;
+}
+.wrap {
+  width: 100%;
+  height: 100rem;
+  margin-top: 1.85rem;
+}
+.wrap .banner {
+  width: 100%;
+  height: 6.8rem;
+}
+.wrap .banner img {
+  width: 100%;
+  height: 6.8rem;
+}
+.wrap .nav {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.45rem 0 0.05rem 0;
+  background: #cce3d1;
+  border-top: 1px solid #acd3b3;
+}
+.wrap .nav .nav_item {
+  float: left;
+  width: 20%;
+  height: 2.85rem;
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
+.wrap .nav .nav_item .nav_title {
+  display: block;
+  font-weight: normal;
+  line-height: 1.1rem;
+}
+.wrap .nav .nav_item img {
+  width: 1.7rem;
+  height: 1.75rem;
+}
+.wrap .suning_news {
+  width: 100%;
+  height: 2.175rem;
+  margin-top: 0.05rem;
+  background: #cce3d1;
+  margin-bottom: 0.475rem;
+}
+.wrap .suning_news .news_left {
+  width: 3.475rem;
+  height: 2.175rem;
+  background: url('../img/ico-tt.jpg') no-repeat 0 0.55rem;
+  background-size: 3.1rem 1.025rem;
+  float: left;
+}
+.wrap .suning_news .split_line {
+  width: 1px;
+  height: 0.825rem;
+  background: #97c1a0;
+  margin-top: 0.675rem;
+  float: left;
+}
+.wrap .suning_news .news_list {
+  float: left;
+  width: 10.75rem;
+  height: 2.175rem;
+  box-sizing: border-box;
+  padding-top: 0.35rem;
+  margin-left: 0.8rem;
+}
+.wrap .suning_news .news_list .news_item {
+  display: block;
+  line-height: 0.7rem;
+  background: url('../img/ico-list.jpg') no-repeat 0 0.25rem;
+  background-size: 0.15rem 0.15rem;
+  text-indent: 0.425rem;
+}
+.wrap .shopping_module .module_top {
+  height: 6.2rem;
+  overflow: hidden;
+}
+.wrap .shopping_module .module_top a {
+  float: left;
+  display: block;
+}
+.wrap .shopping_module .module_top .top_big {
+  width: 7.975rem;
+  height: 6.2rem;
+  margin-right: 2px;
+}
+.wrap .shopping_module .module_top .top_big img {
+  width: 7.975rem;
+  height: 6.2rem;
+}
+.wrap .shopping_module .module_top .top_small {
+  width: 7.975rem;
+  height: 3.075rem;
+  margin-bottom: 1px;
+}
+.wrap .shopping_module .module_top .top_small img {
+  width: 7.975rem;
+  height: 3.075rem;
+}
+.wrap .shopping_module .module_bottom a {
+  float: left;
+  display: block;
+}
+.wrap .shopping_module .module_bottom .bottom_item {
+  display: block;
+  width: 3.975rem;
+  height: 6.425rem;
+  margin: 0 1px 1px 0;
+}
+.wrap .shopping_module .module_bottom .bottom_item img {
+  width: 3.975rem;
+  height: 6.425rem;
+}
+.wrap .suning_qg {
+  width: 100%;
+  height: 6.425rem;
+  background: #cce3d1;
+  margin-top: 33px;
+  padding-left: 0.4rem;
+  box-sizing: border-box;
+}
+.wrap .suning_qg .head {
+  width: 100%;
+  height: 1.35rem;
+}
+.wrap .suning_qg .head .head_left {
+  float: left;
+}
+.wrap .suning_qg .head .head_left .title {
+  float: left;
+  width: 2.9rem;
+  height: 1rem;
+  margin-right: 0.4rem;
+  background: url('../img/title-qg.jpg') no-repeat;
+  background-size: 2.9rem 1rem;
+}
+.wrap .suning_qg .head .head_left .time_box {
+  float: left;
+  padding-top: 0.35rem;
+}
+.wrap .suning_qg .head .head_left .time_box .time_name {
+  float: left;
+  line-height: 0.65rem;
+  font-size: 0.45rem;
+  color: #f94f4e;
+}
+.wrap .suning_qg .head .head_left .time_box .update_time {
+  float: left;
+}
+.wrap .suning_qg .head .head_left .time_box .update_time .time_splice {
+  float: left;
+}
+.wrap .suning_qg .head .head_left .time_box .update_time .time_item {
+  display: block;
+  float: left;
+  width: 0.5rem;
+  height: 0.5rem;
+  border: 1px solid #809474;
+  border-radius: 0.1rem;
+  text-align: center;
+  line-height: 0.5rem;
+  color: #383938;
+  margin: 0 0.2rem 0 0.2rem;
+  font-size: 0.45rem;
+}
+.wrap .suning_qg .head .head_left .time_box .update_time .tips {
+  color: #ff3739;
+  border-color: #ff3739;
+}
+.wrap .suning_qg .head .head_right {
+  float: right;
+  padding: 0.275rem 0.5rem 0 0;
+}
+.wrap .suning_qg .head .head_right .more {
+  display: block;
+  float: left;
+  width: 2.6rem;
+  height: 0.725rem;
+  line-height: 0.725rem;
+  font-size: 0.45rem;
+  background: #ffc001;
+  border-radius: 0.3rem;
+  text-align: center;
+  color: #456c24;
+  margin-right: 0.05rem;
+}
+.wrap .suning_qg .head .head_right .ico_more {
+  float: left;
+  width: 0.375rem;
+  height: 0.625rem;
+  background: url('../img/ico-sj.jpg') no-repeat;
+  background-size: 0.375rem 0.625rem;
+  line-height: 0.725rem;
+}
+.wrap .suning_qg .shopping_box {
+  width: 100%;
+  overflow: auto;
+}
+.wrap .suning_qg .shopping_box .shopping_list {
+  width: 200%;
+}
+.wrap .suning_qg .shopping_box .shopping_list .list_item {
+  width: 4.75rem;
+  float: left;
+  overflow: hidden;
+  margin-right: 0.2rem;
+}
+.wrap .suning_qg .shopping_box .shopping_list .list_item .item_image {
+  display: block;
+  width: 4.7rem;
+  border: 1px solid #b2cdb1;
+}
+.wrap .suning_qg .shopping_box .shopping_list .list_item .item_image img {
+  width: 100%;
+}
+.wrap .suning_qg .shopping_box .shopping_list .list_item .item_bottom {
+  width: 4.75rem;
+  height: 1.425rem;
+  background: #ddd;
+  padding-left: 0.4rem;
+  box-sizing: border-box;
+  position: relative;
+}
+.wrap .suning_qg .shopping_box .shopping_list .list_item .item_bottom .present_price {
+  display: block;
+  color: #dc0000;
+  line-height: 0.7rem;
+}
+.wrap .suning_qg .shopping_box .shopping_list .list_item .item_bottom .original_price {
+  display: block;
+  font-size: 0.4rem;
+  color: #999;
+  line-height: 0.6rem;
+}
+.wrap .suning_qg .shopping_box .shopping_list .list_item .item_bottom .discount {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: -0.15rem;
+  right: 0.15rem;
+  width: 1.525rem;
+  height: 1.525rem;
+  background: url('../img/ico-zhekou.jpg') no-repeat;
+  background-size: 1.525rem 1.525rem;
+  color: white;
+  text-align: center;
+  font-style: normal;
+  padding-top: 0.25rem;
+}
+.wrap .suning_qg .shopping_box .shopping_list .list_item .item_bottom .discount .big_font {
+  font-size: 0.55rem;
+}
+.wrap .suning_qg .shopping_box .shopping_list .list_item .item_bottom .discount .small_font {
+  font-size: 0.45rem;
+}
