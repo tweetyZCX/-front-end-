@@ -3,8 +3,9 @@
 [博客园](http://www.cnblogs.com/endymion/)
 
 ## 我的前端作品集
-###学校实训项目
+### 学校实训项目
 基于fabric的供应链网站
+https://share.weiyun.com/5GkjCOm
 
 ### 静态页面整站制作：
 1. 购物网站整站
